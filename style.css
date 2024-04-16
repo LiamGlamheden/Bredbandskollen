@@ -1,8 +1,31 @@
 * {
-    padding: unset;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-header {}
+.header {
+
+    display: flex;
+    margin: 0;
+    background: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    padding: 0 7rem;
+
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+
+}
+
 
 main {}
 
