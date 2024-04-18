@@ -8,8 +8,9 @@
     display: flex;
     align-items: center;
     margin: 0;
-    background: blue;
-    position: fixed;
+    background: white;
+    justify-content: space-between;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -33,44 +34,81 @@
 }
 
 .header-h2 {
+    margin-right: 20px;
     display: flex;
     flex-direction: row;
-    position: fixed;
-    align-items: end;
     padding: 1rem;
-
-
+    gap: 2rem;
+    font-size: 80%;
+    color: #3284bf;
 }
 
 
 .main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(238, 238, 238);
+
+}
+
+.content {
+
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    background: purple;
-    position: fixed;
-    top: 5rem;
+    background: #3284bf;
+    position: relative;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     height: 18rem;
     padding: 0 7rem;
-}
 
-.content {
-    display: flex;
-    align-items: center;
 }
 
 .text {
-    margin-left: 20px;
+    margin-left: 40px;
     color: white;
-    /* Justera detta beroende på önskad avstånd mellan bilden och texten */
 }
 
 .main .img {
-    margin-right: 50px;
+    padding-left: 75px;
+
 }
+
+.Measure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 10rem;
+}
+
+.Measure-button {
+    margin-top: -2rem;
+    font-size: 1.5rem;
+    padding: 20px 25px;
+    border: none;
+    background-color: #ffe100;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Measure-p {
+    margin-top: 1rem;
+}
+
+
+
 
 footer {}
