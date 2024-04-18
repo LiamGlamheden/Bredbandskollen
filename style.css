@@ -6,6 +6,7 @@
 .header {
 
     display: flex;
+    align-items: center;
     margin: 0;
     background: blue;
     position: fixed;
@@ -18,36 +19,58 @@
 
 }
 
-header h1 {
+.header-h1 {
 
     margin: 0;
     margin-top: 0.5rem;
 }
 
-header p {
+.header-p {
     margin: 0;
 
 
 
 }
 
-header span {
-    margin-right: 100%;
-    padding: 10px;
+.header-h2 {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: end;
+    padding: 1rem;
+
+
 }
 
 
 .main {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     background: purple;
     position: fixed;
     top: 5rem;
     left: 0;
     right: 0;
+    bottom: 0;
     height: 18rem;
     padding: 0 7rem;
+}
 
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin-left: 20px;
+    color: white;
+    /* Justera detta beroende på önskad avstånd mellan bilden och texten */
+}
+
+.main .img {
+    margin-right: 50px;
 }
 
 footer {}
