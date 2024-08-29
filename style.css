@@ -3,18 +3,16 @@
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .header {
     display: flex;
     align-items: center;
-    margin: 0;
-    background: white;
     justify-content: space-between;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
+    padding: 0 2rem;
     height: 5rem;
-    padding: 0 7rem;
 }
 
 .header-h1 {
@@ -138,7 +136,6 @@ footer {}
     align-items: flex-start;
 }
 
-
 .Comapny-info {
     flex: 0 0 calc(30% - 20px);
     flex-basis: 100%;
@@ -146,7 +143,6 @@ footer {}
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-start;
-
 }
 
 .Comapny-info div {
@@ -157,4 +153,82 @@ footer {}
     max-width: 100%;
     height: auto;
     margin: 10px;
+}
+
+
+@media (max-width: 1000px) {
+    .content {
+        padding: 0 3rem;
+    }
+
+    .text {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 1rem;
+    }
+
+    .header-h2 {
+        gap: 1rem;
+        padding: 0.5rem;
+        font-size: 70%;
+    }
+
+    .content {
+        padding: 0 1rem;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .Measure-button {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+
+    .icon-frame {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0 0.5rem;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .header-h2 {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .content {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .Measure-button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .icon-frame {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-text {
+        font-size: 70%;
+    }
 }
